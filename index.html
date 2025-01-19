@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SheCodes</title>
+    <meta charset="UTF-8" />
+
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 0 20px;
+      }
+
+      h1 {
+        text-align: center;
+        font-weight: 900;
+        margin: 0;
+        font-size: 34px;
+        line-height: 48px;
+      }
+
+      h1 h2,
+      h3 {
+        color: #231d3c;
+      }
+
+      .logo {
+        display: block;
+        margin: 30px auto;
+        width: 150px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <img src="images/logo.png" alt="SheCOdes" class="logo" />
+    <h1>HTML Input Types</h1>
+
+    <h3>Challenge 1</h3>
+    <p>Create a search input with a label "What's on your mind?"</p>
+
+    <label for="mind">What is on your mind?</label>
+    <input type="text" id="mind" />
+
+    <h3>Challenge 2</h3>
+    <p>
+      Create a form with a date input asking "What is your birth date?", a
+      submit button "Submit" and the form should send the date to /submit
+    </p>
+    <form action="/submit">
+      <label for="date">What is your birth date?</label>
+      <input type="date" name="" id="date" />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <h3>Challenge 3</h3>
+    <p>
+      Create radio inputs asking "What is your favorite primary color?" with
+      blue, yellow and red as options
+    </p>
+    <div>
+      <label>What is your favorite primary color?</label>
+
+      <input type="radio" name="primary" id="blue" checked />
+      <label for="blue">blue </label>
+    </div>
+    <div>
+      <input type="radio" name="primary" id="yellow" />
+      <label for="yellow">yellow</label>
+    </div>
+    <div>
+      <input type="radio" name="primary" id="red" />
+      <label for="red">red </label>
+    </div>
+
+    <h3>Challenge 4</h3>
+    <p>
+      Create checkbox inputs asking "How do you like to travel?" with plane,
+      bus, train, car, walking as options
+    </p>
+    <div>
+      <label>How do you like to travel?</label>
+
+      <input type="checkbox" name="means" id="plane" />
+      <label for="plane">Plane </label>
+    </div>
+    <div>
+      <input type="checkbox" name="means" id="bus" />
+      <label for="bus">Bus </label>
+    </div>
+    <div>
+      <input type="checkbox" name="means" id="train" />
+      <label for="train">Train </label>
+    </div>
+    <div>
+      <input type="checkbox" name="means" id="car" />
+      <label for="car">car </label>
+    </div>
+    <div>
+      <input type="checkbox" name="means" id="walking" />
+      <label for="walking">Walking</label>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
